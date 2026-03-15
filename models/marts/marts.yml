@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Fact table containing order items enriched with order-level information.
+    columns:
+      - name: order_id
+        description: Unique identifier of the order.
+
+  - name: dim_products
+    description: Dimension table containing product attributes.
+
+  - name: dim_customers
+    description: Dimension table containing customer information.
+
+  - name: mart_sales_daily
+    description: Daily aggregated sales metrics.
+    columns:
+      - name: order_date
+        description: Date of order purchase.
+        tests:
+          - not_null
+          - unique

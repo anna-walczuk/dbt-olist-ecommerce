@@ -1,0 +1,23 @@
+
+target/
+dbt_packages/
+logs/
+
+target/
+dbt_packages/
+logs/
+
+# local database
+*.duckdb
+
+# python
+__pycache__/
+*.pyc
+
+# virtual env
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
