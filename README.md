@@ -81,3 +81,22 @@ dim_customers
 ↓
 mart_sales_daily
 ```
+
+## Lineage Graph
+
+![dbt lineage](docs/lineage.png)
+
+
+## Key dbt Concepts Used
+
+- modular SQL models
+- ref() dependency graph
+- staging → marts architecture
+- data quality tests (not_null, unique, relationships)
+- model materializations (view vs table)
+
+## Dataset
+
+This project uses the Brazilian E-Commerce Public Dataset by Olist from Kaggle.
+The dataset contains information about orders, customers, products and sellers
+from a Brazilian marketplace.
